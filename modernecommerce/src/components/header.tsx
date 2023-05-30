@@ -1,9 +1,7 @@
-
-import Image from "next/image";
 import styled from "styled-components";
 
-import { HamburguerMenuNavbar } from "./HamburguerMenuNavbar";
-import { NavbarMenu } from "./NavbarMenu";
+import HamburguerMenuNavbar from "./HamburguerMenuNavbar";
+import  NavbarMenu  from "./NavbarMenu";
 
 
 import { Poppins } from "next/font/google";
@@ -29,7 +27,7 @@ const TagHeader = styled.header`
 
 
 
-export function Header(props: HeaderProps) {
+export default function Header(props: HeaderProps) {
    
   return (
     <TagHeader>

@@ -6,12 +6,7 @@ import styled from "styled-components";
 import { HamburguerMenuData } from './HamburguerMenuData'
 import { IconContext } from 'react-icons';
 
-const MenuBars = styled.a`
-  
-`;
-
 const NavMenu = styled.nav`
-  /* Add your styles for the nav-menu class */
   display: flex;
   justify-content: center;
   position: fixed;
@@ -25,7 +20,6 @@ const NavMenu = styled.nav`
 
   padding: 0 1rem 1rem 0;
   &.active {
-    /* Add your styles for the active state */
     left: 0;
     transition: 350ms;
   }
@@ -35,8 +29,6 @@ const NavMenu = styled.nav`
   }
 `;
 const LinkStyle = styled.a`
-  /* Add your styles for the nav-menu class */
-  /* background-color: #060b26; */
   width: 3rem;
   height: 3rem;
   display: flex;
@@ -59,7 +51,6 @@ const NavMenuItems = styled.ul`
 `;
 
 const NavbarToggle = styled.li`
-  /* Add your styles for the navbar-toggle class */
   /* background-color: #060b26; */
   width: 3rem;
   height: 3rem;
@@ -126,7 +117,7 @@ const OutlineClose = styled(AiIcons.AiOutlineClose )`
 `
 
 
-export function HamburguerMenuNavbar() {
+export default function HamburguerMenuNavbar() {
     const [sidebar, setSidebar] = useState(false);
 
     const showSidebar = () => setSidebar(!sidebar);

@@ -65,44 +65,43 @@ const RocketText = styled.div`
     border-bottom: 2px solid #000000;
 
   }
-    > button {
-        width: 125px;
-        height: 49px;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 36px;
+  > button {
+      width: 125px;
+      height: 49px;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 36px;
 
-        margin-top: 26px;
-        padding-bottom: 13px;
-        border: none;
-        background-color: #fff;
-        border-bottom: 3px solid black;
+      margin-top: 26px;
+      padding-bottom: 13px;
+      border: none;
+      /* border-bottom: 3px solid black; */
 
-        cursor: pointer;
+      cursor: pointer;
 
-        transition: all .5s ease;
-        text-align: center;
-        line-height: 1;
-        background-color : transparent;
-        outline: none;
+      transition: all .5s ease;
+      background-color : transparent;
+      outline: none;
 
-        &:hover {
-            color: #001F3F;
-            background-color: #dedede3a;
-            border-radius: 4px;
+      &:hover {
+        transform: scale(1.15);          
+      }
 
-            opacity: 0.9;
-        }
-
-    } 
+  } 
+`
+const RocketTextLine = styled.span`
+  width: 121px;
+  height: 2px;
+  background-color: #000;
 `
 
-export function RocketSingleSeater(props: RockeSingleSeaterProps) {
+export default function RocketSingleSeater(props: RockeSingleSeaterProps) {
   return (
     <SeaterSection>
       <RocketText>
         <h1>Rocket single seater</h1>
         <button type="submit">Shop Now</button>
+        <RocketTextLine></RocketTextLine>
       </RocketText>
       <figure>
         <RocketSingleSeaterImage />

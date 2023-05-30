@@ -1,12 +1,11 @@
 "use client"
 
-import { RocketSingleSeater } from "@/components/rocketSingleSeater"
-
-import styles from './page.module.css'
-
 import styled from "styled-components"
-import Table from "@/components/table"
-import TopPicks from "@/components/TopPicks"
+import RocketSingleSeater  from "@/components/Home/rocketSingleSeater"
+import Table from "@/components/Home/table"
+import TopPicks from "@/components/Home/TopPicks"
+import AsgaardSofa from "@/components/Home/AsgaardSofa"
+import OurBlogs from "@/components/Home/OurBlogs"
 
 const MainWrapper = styled.main`
   display: flex;
@@ -23,6 +22,8 @@ export default function Home() {
       <RocketSingleSeater />
       <Table />
       <TopPicks />
+      <AsgaardSofa />
+      <OurBlogs />
     </MainWrapper>
   )
 }
