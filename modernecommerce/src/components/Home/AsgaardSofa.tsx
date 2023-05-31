@@ -1,13 +1,13 @@
 import Image from "next/image"
 import styled from "styled-components"
 
-const AsgaardSection = styled.section`
-    width: 1440px;
+const AsgaardSection = styled.div`
+    width: var(--max-width);
     height: 639px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     place-items: center;
-    background-color: #FFF9E6;
+    background-color: var(--bc-yellow-light);
 `
 
 const AsgaardFigure = styled.figure`

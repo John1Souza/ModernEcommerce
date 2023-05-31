@@ -29,7 +29,7 @@ const Logo = styled.a`
 const Navbar = styled.nav`
   display: grid;
   grid-template-columns: 1.5fr 2fr 1.5fr;
-  width: 1440px;
+  width: var(--max-width);
 
   background-color: transparent;
 

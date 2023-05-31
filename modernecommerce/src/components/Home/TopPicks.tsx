@@ -2,14 +2,14 @@ import styled from "styled-components";
 import { TopPicksData } from "./TopPicksData";
 import Image from "next/image";
 
-export const TopPicksSection = styled.section`
+export const TopPicksSection = styled.div`
     background-color: #ffffff;
-  width: 1440px;
+    width: var(--max-width);
   height: 777px;
   display: grid;
   place-items: center;
   padding: 16px 100px 16px 100px ;
-
+k
   > h1,
   p {
     display: flex;

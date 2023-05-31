@@ -20,7 +20,7 @@ const TagHeader = styled.header`
   display: flex;
   align-items: center;
   width: 100vw;
-  max-width: 1440px;
+  max-width: var(--max-width);
   height: 100px;
 `;
 

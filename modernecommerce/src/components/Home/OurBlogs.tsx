@@ -3,8 +3,8 @@ import { OurBlogsData } from './OurBlogsData'
 import Image from 'next/image'
 import * as AiIcons from "react-icons/ai"
 
-const OurBlogsSection = styled.section`
-    width: 1440px;
+const OurBlogsSection = styled.div`
+    width: var(--max-width);
     height: 944px;
     display: flex; 
     flex-direction: column;    

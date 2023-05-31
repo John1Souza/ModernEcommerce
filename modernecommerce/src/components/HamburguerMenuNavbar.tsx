@@ -77,9 +77,9 @@ const NavMenuList = styled.li`
     list-style: none;
     height: 3rem;
 
-    > a {
+    a {
         text-decoration: none;
-        color: #f5f5f5;
+        color: var(--almost-white);
         font-size: 1rem;
         width: 95%;
         height: 100%;

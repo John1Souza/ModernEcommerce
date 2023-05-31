@@ -6,12 +6,12 @@ interface RockeSingleSeaterProps {
 
 }
 
-const SeaterSection = styled.section`
+const SeaterSection = styled.div`
     display: grid;
     grid-template-columns: 2fr 1fr;
     position: relative;
     top: -100px;
-    width: 1440px;
+    width: var(--max-width);
     height: 1000px;
 
     background-color: var(--bc-yellow);

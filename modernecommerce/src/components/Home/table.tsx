@@ -1,9 +1,9 @@
 import styled from "styled-components"
 
-const TableSection = styled.section`
-    width: 1440px;
+const TableSection = styled.div`
+    width: var(--max-width);
     height: 672px;
-    background-color: #FAF4F4;
+    background-color: var(--pinky);
     margin-top: -100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
