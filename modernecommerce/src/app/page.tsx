@@ -1,7 +1,7 @@
 "use client"
 
 import styled from "styled-components"
-import { HomeSection } from "@/components/Home/HomeSection"
+import { HomeSection } from "@/Home/HomeSection"
 
 const MainWrapper = styled.main`
   display: flex;
