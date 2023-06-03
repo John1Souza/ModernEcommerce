@@ -3,6 +3,7 @@
 
 import axios from 'axios';
 import React, {useEffect, useState} from 'react'
+import * as SlIcons from "react-icons/sl"
 
 export default function Shop() {
     const [products, setProducts] = useState([]);
@@ -21,7 +22,10 @@ export default function Shop() {
     }, []);
   return (
     <main>
-
+        <div>
+            <h1>Shop</h1>
+            <div><p>Home</p><SlIcons.SlArrowRight /><p>Shop</p></div>
+        </div>
     </main>
   )
 }
