@@ -10,6 +10,7 @@ const sairaStencilOne = Saira_Stencil_One({
 import { Poppins } from "next/font/google";
 import Image from "next/image";
 import HamburgerMenuNavbar from "../HamburgerMenu/HamburgerMenuNavbar";
+import Link from 'next/link';
 
 const poppins = Poppins({
   weight: ["500", "400", "300", "600"],
@@ -25,10 +26,10 @@ export default function Header() {
     <TagHeader>
         <HamburgerMenuNavbar />
         <Navbar>
-          <Logo className={sairaStencilOne.className}>Modern Ecommerce</Logo>
+          <Logo className={sairaStencilOne.className}><Link href="/Home">Modern Ecommerce</Link></Logo>
           <NavbarList className={poppins.className}>
-            <NavbarListItem>Home</NavbarListItem>
-            <NavbarListItem>Shop</NavbarListItem>
+            <NavbarListItem><Link href="/">Home</Link></NavbarListItem>
+            <NavbarListItem><Link href="/shop">Shop</Link></NavbarListItem>
             <NavbarListItem>About</NavbarListItem>
             <NavbarListItem>Contact</NavbarListItem>
           </NavbarList>

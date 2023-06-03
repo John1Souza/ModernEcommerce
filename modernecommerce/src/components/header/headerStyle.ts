@@ -1,5 +1,17 @@
 import styled from "styled-components";
 
+export const TagHeader = styled.header`
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  max-width: var(--max-width);
+  height: 100px;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+`;
 
 export const Logo = styled.a`
   display: flex;
@@ -88,16 +100,4 @@ export const NavbarListIconsItem = styled.li`
     cursor: pointer;
   }
 `
-
-interface HeaderProps {
-
-}
-
-export const TagHeader = styled.header`
-  display: flex;
-  align-items: center;
-  width: 100vw;
-  max-width: var(--max-width);
-  height: 100px;
-`;
 
