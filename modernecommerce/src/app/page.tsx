@@ -8,7 +8,22 @@ const MainWrapper = styled.main`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: var(--max-width);
+  max-width: var(--max-width);
+
+  position: relative;
+  top: -100px;
+
+
+  @media screen and (max-width: 320px) {
+
+    
+    div {
+      display: grid;
+      grid-template-columns: 1fr;
+      place-items: center;
+
+    }
+  }
   
 `
 

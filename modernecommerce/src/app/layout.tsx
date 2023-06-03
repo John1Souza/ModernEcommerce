@@ -1,9 +1,9 @@
 "use client"
 
-import Header  from '@/components/header'
+import Header  from '@/components/header/header'
 import './globals.css'
 import { Poppins } from 'next/font/google'
-import { Footer } from '@/components/footer'
+import { Footer } from '@/components/Footer/footer'
 
 const poppins = Poppins({
    weight: ["500", "400", "300", "600"], 

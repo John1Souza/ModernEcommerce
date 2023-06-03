@@ -1,12 +1,9 @@
-import { useState } from 'react';
-import Link from "next/link";
+import styled from "styled-components";
+
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
-import styled from "styled-components";
-import { HamburguerMenuData } from './HamburguerMenuData'
-import { IconContext } from 'react-icons';
 
-const NavMenu = styled.nav`
+export const NavMenu = styled.nav`
   display: flex;
   justify-content: center;
   position: fixed;
@@ -28,7 +25,7 @@ const NavMenu = styled.nav`
     display: none;
   }
 `;
-const LinkStyle = styled.a`
+export const LinkStyle = styled.a`
   width: 3rem;
   height: 3rem;
   display: flex;
@@ -45,12 +42,12 @@ const LinkStyle = styled.a`
  
 `;
 
-const NavMenuItems = styled.ul`
+export const NavMenuItems = styled.ul`
   /* Add your styles for the nav-menu-items class */
   width: 100%;
 `;
 
-const NavbarToggle = styled.li`
+export const NavbarToggle = styled.li`
   /* background-color: #060b26; */
   width: 3rem;
   height: 3rem;
@@ -69,7 +66,7 @@ const NavbarToggle = styled.li`
   }
 `;
 
-const NavMenuList = styled.li`
+export const NavMenuList = styled.li`
     display: flex;
     justify-content: start;
     align-items: center;
@@ -97,7 +94,7 @@ const NavMenuList = styled.li`
         border-radius: 5px;       
     }
 `
-const Span = styled.span`
+export const Span = styled.span`
     color: #000;
     margin-left: 1rem;
 
@@ -105,47 +102,13 @@ const Span = styled.span`
 
 
 
-const Bars = styled(FaIcons.FaBars)`
+export const Bars = styled(FaIcons.FaBars)`
     width: 1.5rem;
     height: 1.5rem;
     
 `
-const OutlineClose = styled(AiIcons.AiOutlineClose )`
+export const OutlineClose = styled(AiIcons.AiOutlineClose )`
     width: 1.5rem;
     height: 1.5rem;
     
 `
-
-
-export default function HamburguerMenuNavbar() {
-    const [sidebar, setSidebar] = useState(false);
-
-    const showSidebar = () => setSidebar(!sidebar);
-  return (
-    <>
-
-        <IconContext.Provider value={{ color : '#000'}}>
-            <LinkStyle href="#">
-                <Bars onClick={showSidebar}/>
-            </LinkStyle>
-            <NavMenu className={sidebar ? "active" : ""}>
-                <NavMenuItems onClick={showSidebar}>
-                <NavbarToggle>
-                    <Link href="#">
-                        <OutlineClose />   
-                    </Link>
-                </NavbarToggle>
-                {HamburguerMenuData.map((item, index) => (
-                    <NavMenuList key={index} className={item.cName}>
-                        <Link href={item.path}>
-                            {item.icon}
-                            <Span>{item.title}</Span>
-                        </Link>
-                    </NavMenuList>
-                ))}
-                </NavMenuItems>
-            </NavMenu>
-        </IconContext.Provider>
-    </>
-  )
-}
