@@ -26,10 +26,10 @@ export default function Header() {
     <TagHeader>
         <HamburgerMenuNavbar />
         <Navbar>
-          <Logo className={sairaStencilOne.className}><Link href="/Home">Modern Ecommerce</Link></Logo>
+        <Logo className={sairaStencilOne.className}><Link href="/Home">Modern Ecommerce</Link></Logo>
           <NavbarList className={poppins.className}>
-            <NavbarListItem><Link href="/">Home</Link></NavbarListItem>
-            <NavbarListItem><Link href="/shop">Shop</Link></NavbarListItem>
+          <NavbarListItem><Link href="/">Home</Link></NavbarListItem>
+          <NavbarListItem><Link href="/shop">Shop</Link></NavbarListItem>
             <NavbarListItem>About</NavbarListItem>
             <NavbarListItem>Contact</NavbarListItem>
           </NavbarList>
